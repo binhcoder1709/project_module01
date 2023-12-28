@@ -1,0 +1,13 @@
+@import "./css-component/header.css";
+@import "./css-component/home.css";
+@import "./css-component/book.css";
+@import "./css-component/detail.css";
+@import "./css-component/login.css";
+@import "./css-component/register.css";
+@import "./css-component/information-user.css";
+.dt-book-img-sz-df
+{
+    width: 250px;
+    height: 400px;
+    object-fit: contain;
+}

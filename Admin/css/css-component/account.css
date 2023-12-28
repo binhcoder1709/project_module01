@@ -1,0 +1,16 @@
+thead,tbody, tr, td, th
+{
+    border: 1px solid gray;
+    text-align: center;
+}
+table
+{
+    width: 100%;
+}
+.main-header input
+{
+    padding: 5px 10px;
+    border: 1px solid gray;
+    width: 300px;
+    outline: none;
+}

@@ -1,0 +1,18 @@
+.all-book
+{
+    padding: 10px 250px;
+    margin-top: 70px;
+}
+.select-book-type .form-select
+{
+    height: 40px;
+    width: 250px;
+}
+.select-book-type .form-select:focus
+{
+    box-shadow: 0 0 0 0;
+}
+.select-book-type option
+{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

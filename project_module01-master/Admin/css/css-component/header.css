@@ -1,0 +1,49 @@
+.header
+{
+    width: 100%;
+    height: 60px;
+    background-color: #c9cdd0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+.user-container
+{
+    height: 100%;
+}
+.user-container img
+{
+    height: 70%;
+}
+.func a
+{
+    padding: 10px 10px;
+}
+.func a:hover
+{
+    background-color: whitesmoke;
+    transition: .3s ease;
+}
+nav
+{
+    width: 15%;
+    height: calc(100vh - 60px);
+    background-color: #0b0b0b;
+    padding: 10px 10px;
+}
+nav a
+{
+    color: white;
+    padding: 10px 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+nav a:hover
+{
+    background-color: #2b2929;
+}
+.active
+{
+    background-color: #2b2929;
+}
