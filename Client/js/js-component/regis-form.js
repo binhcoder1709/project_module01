@@ -114,7 +114,7 @@ const regis_submit_validate = $('#regis-form').addEventListener('submit', (e) =>
             email: $('#regisEmail').value,
             password: $('#regisPassword').value,
             status: 1,
-            wishList: null,
+            wishList: [],
             createdDate: formatDate()
         }
         const userLocal = JSON.parse(localStorage.getItem("users")) || [];

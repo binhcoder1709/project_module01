@@ -327,3 +327,13 @@
     font-size: small;
     border-radius: 5px;
 }
+.book-detail
+{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.form
+{
+    width: 50%;
+    background-color: white;
+    padding: 20px 20px;
+}

@@ -34,3 +34,9 @@
 {
     background-color: rgb(38, 38, 236);
 }
+.product-image-table
+{
+    width: 70px;
+    object-fit: cover;
+    height: 100px;
+}

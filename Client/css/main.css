@@ -5,6 +5,7 @@
 @import "./css-component/login.css";
 @import "./css-component/register.css";
 @import "./css-component/information-user.css";
+@import "./css-component/wishlist.css";
 .dt-book-img-sz-df
 {
     width: 250px;

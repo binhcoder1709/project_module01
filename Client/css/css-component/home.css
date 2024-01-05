@@ -44,11 +44,13 @@
     text-overflow: ellipsis;
     font-size: smaller;
     /* font-weight: 600; */
+    text-transform: capitalize;
 }
 .box-type span
 {
     font-size: x-small;
     color: gray;
+    text-transform: capitalize;
 }
 .rate
 {
@@ -77,4 +79,19 @@
 .saling-book
 {
     padding-bottom: 50px;
+}
+.home-banner
+{
+    padding: 0px 30px;
+}
+.home-banner img
+{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+.carousel-inner img
+{
+    object-position: center;
 }

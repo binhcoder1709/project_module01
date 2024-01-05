@@ -1,11 +1,12 @@
-let user_func = document.querySelector('.user-func');
+const user_func = document.querySelector('.user-func')
 const adminLoginLocal = JSON.parse(localStorage.getItem("userAdminLogin")) || [];
-const renderadminLogins = adminLoginLocal.map((adminLogin, index) =>
+if(!Array.isArray(adminLoginLocal))
 {
-    return `
+    const renderAdmin =
+    `
     <div class="user parent-dropdown cursor-pointer h-full flex items-center gap-1" id="parent-dropdown">
-        <img src="${adminLogin.avatar}" class="rounded-full" alt="">
-        <span>${adminLogin.userName}</span>
+        <img src="${adminLoginLocal.avatar}" class="rounded-full" alt="">
+        <span>${adminLoginLocal.userName}</span>
         <i class="fa-solid fa-chevron-down" id="dropdownBtn"></i>
     </div>
     <div class="func children-dropdown hidden flex flex-col bg-gray-300 absolute" id="children-dropdown">
@@ -14,6 +15,5 @@ const renderadminLogins = adminLoginLocal.map((adminLogin, index) =>
         <a href="#" id="logout"><i class="fa-solid fa-arrow-right-from-bracket"></i> Đăng xuất</a>
     </div>
     `
-});
-const renderadminLogin = renderadminLogins.join("");
-user_func.innerHTML = renderadminLogin;
+    user_func.innerHTML = renderAdmin;
+}

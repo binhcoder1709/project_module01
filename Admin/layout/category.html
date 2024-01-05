@@ -44,7 +44,8 @@
         <main class="w-full p-10">
             <div class="main-container w-full">
                 <div class="main-header flex w-full justify-between">
-                    <h1 class="text-2xl font-semibold">Tài khoản</h1>
+                    <h1 class="text-2xl font-semibold">Danh mục</h1>
+                    <input type="text" placeholder="Tìm kiếm danh mục">
                     <button type="button" id="openCategoryForm" class="bg-blue-600 text-white rounded-lg p-1">Thêm danh mục</button>
                 </div>
                 <div class="main-table w-full">
@@ -53,7 +54,7 @@
                             <tr class="">
                                 <th>STT</th>
                                 <th>Tên danh mục</th>
-                                <td>Ngày tạo</td>
+                                <th>Ngày tạo</th>
                                 <th>Chức năng</th>
                             </tr>
                         </thead>
@@ -124,4 +125,5 @@
 <script src="https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/umd/uuidv4.min.js"></script>
 <script type="module" src="../js/category.js"></script>
 <script src="../js/dropdown.js"></script>
+<script src="../js/render-admin.js"></script>
 </html>

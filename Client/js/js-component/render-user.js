@@ -19,13 +19,13 @@ if (!Array.isArray(userLoginData)) {
             <img src="${userLoginData.avatar}"/>
           </div>
           <div class="user-dropdown-info-text flex flex-col">
-            <span class="text-sm">${userLoginData.userName}</span>
+            <span class="text-sm font-bold">${userLoginData.userName}</span>
             <span class="text-xs">${userLoginData.email}</span>
           </div>
         </div>
         <div class="user-dropdown-function flex flex-col">
           <a href="/Client/layout/information-user.html">Thông tin cá nhân</a>
-          <a href="#">Sách yêu thích</a>
+          <a href="/Client/layout/wishlist.html">Sách yêu thích</a>
           <a href="#">Sách đã mua</a>
           <a href="/Client/layout/login.html" id="logout-btn">Đăng xuất</a>
         </div>

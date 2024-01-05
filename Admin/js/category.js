@@ -6,9 +6,9 @@ function resetCategoryForm()
     $('#categoryName').value = "";
     $('.categoryFormAlert').innerHTML = "";
 }
+const categoryLocal = JSON.parse(localStorage.getItem("category")) || [];
 function renderCategory()
 {
-    const categoryLocal = JSON.parse(localStorage.getItem("category")) || [];
     const tableCategories = categoryLocal.map((categories, index) =>
     {
         return `
@@ -17,12 +17,12 @@ function renderCategory()
             <td>${categories.categoryName}</td>
             <td>${categories.createdDate}</td>
             <td>    <button type="button">Sửa</button>
-            <button type="button">Xoá</button></td>
-        </tr>
-        `
-    })
-    const tableCategoriesRender = tableCategories.join("");
-    $('#tbody').innerHTML = tableCategoriesRender;
+            <button type="button" onclick="delCategory('${categories.categoryId}')">Xoá</button></td>
+            </tr>
+            `
+        })
+        const tableCategoriesRender = tableCategories.join("");
+        $('#tbody').innerHTML = tableCategoriesRender;
 }
 renderCategory();
 function closeForm()
@@ -65,8 +65,8 @@ $('#addCategoryForm').addEventListener('submit', (e) =>
         }
         categoryLocal.push(category);
         localStorage.setItem("category", JSON.stringify(categoryLocal));
-        resetCategoryForm();
         closeForm();
         renderCategory();
+        resetCategoryForm();
     }
 })
